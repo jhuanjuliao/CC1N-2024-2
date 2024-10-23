@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-12</title>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <hr>
+    <br>
+    <table border="1">
+        <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>Camiseta</td>
+            <td>R$ 39,90</td>
+        </tr>
+        <tr>
+            <td>Calça Jeans</td>
+            <td>R$ 89,90</td>
+        </tr>
+        <tr>
+            <td>Tênis</td>
+            <td>R$ 129,90</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <h1>Cabeçalho (thead), corpo (tbody) e rodape (tfoot)</h1>
+    <hr>
+    <br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camiseta</td>
+                <td>R$ 39,90</td>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>Calça Jeans</td>
+                    <td>R$ 89,90</td>
+                </tr>
+            </tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Tênis</td>
+                <td>R$ 129,90</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <hr>
+    <h1>Mesclagem de linhas e colunas</h1>
+    <hr>
+    <br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th colspan="2">Disponibilidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camiseta</td>
+                <td>R$ 39,90</td>
+                <td>Disponível</td>
+                <td>Entregaem24h</td>
+            </tr>
+         <tbody>
+            <tr>
+                <td>Calça Jeans</td>
+                <td>R$ 89,90</td>
+                <td>Indisponível</td>
+                <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -</td>
+            </tr>
+         </tbody>
+        
+        <tfoot>
+            <tr>
+                <td>Tênis</td>
+                <td>R$ 129,90</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th colspan="2">Disponibilidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camiseta</td>
+                <td>R$ 39,90</td>
+                <td rowspan="2">Disponível</td>
+                <td rowspan="2">Entregaem24h</td>
+            </tr>
+            <tr>
+                <td>Tênis</td>
+                <td>R$ 129,90</td>
+            </tr>
+        </tbody>
+                <tr>
+                <td>Calça Jeans</td>
+                <td>R$ 89,90</td>
+                <td>Indisponível</td>
+                <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --</td>
+            </tr>
+       <tfoot>
+           <tbody> 
+                <td>Total</td>
+                <td colspan="3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; R$ 529,90</td>
+            </tbody>
+       </tfoot>
+    </table>
+    <br>
+    <hr>
+    <!-- Aqui é separado para poder realizar a atividade solicitada pelo professor -->
+    <h1>Desafio das tabelas</h1>
+    <hr>
+    <br>
+    <h3>1<sup>a</sup> questão:</h3>
+    <br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="2">Funcionário</th>
+                <th rowspan="2">Semestre</th>
+                <th colspan="2">Gastos</th>
+                <th colspan="2">Lucros</th>
+            </tr>
+            <tr>
+                <th>Líquido</th>
+                <th>Bruto</th>
+                <th>Líquido</th>
+                <th>Bruto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">João</td>
+                <td>1<sup>o</sup></td>
+                <td>1000</td>
+                <td>1200</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>2<sup>o</sup></td>
+                <td>1000</td>
+                <td>1200</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td rowspan="2">Maria</td>
+                <td>1<sup>o</sup></td>
+                <td>1000</td>
+                <td>1200</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>2<sup>o</sup></td>
+                <td>1000</td>
+                <td>1200</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <h3>2<sup>a</sup> questão</h3>
+    <br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th colspan="3">Análise de Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4"><strong>Caixa JBL Bump!</strong></td>
+                <td rowspan="2"><strong>Submarino</strong></td>
+                <td><strong>Boleto</strong></td>
+                <td>R$ 300,00</td>
+            </tr>
+            <tr>
+                <td><strong>Cartão</strong></td>
+                <td>R$ 350,00</td>
+            </tr>
+            <tr>
+                <td rowspan="2"><strong>Amazon</strong></td>
+                <td><strong>Boleto</strong></td>
+                <td>R$ 310,00</td>
+            </tr>
+            <tr>
+                <td><strong>Cartão</strong></td>
+                <td>R$ 340,00</td>
+            </tr>
+            <tr>
+                <td rowspan="4"><strong>Apple Watch SE</strong></td>
+                <td rowspan="2"><strong>Submarino</strong></td>
+                <td><strong>Boleto</strong></td>
+                <td>R$ 2300,00</td>
+            </tr>
+            <tr>
+                <td><strong>Cartão</strong></td>
+                <td>R$ 2500,00</td>
+            </tr>
+            <tr>
+                <td rowspan="2"><strong>Amazon</strong></td>
+                <td><strong>Boleto</strong></td>
+                <td>R$ 2350,00</td>
+            </tr>
+            <tr>
+                <td><strong>Cartão</strong></td>
+                <td>R$ 2350,00</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h3>3<sup>a</sup> questão</h3>
+    <br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="2">Brasil</th>
+            </tr>
+            <tr>
+                <th>Estado</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">São Paulo</td>
+                <td>Corínthians</td>
+            </tr>
+            <tr>
+                <td>Palmeiras</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+            </tr>
+            <tr>
+                <td>Santos</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td rowspan="4">Rio de Janeiro</td>
+                <td>Botafogo</td>
+            </tr>
+            <tr>
+                <td>Flamengo</td>
+            </tr>
+            <tr>
+                <td>Fluminense</td>
+            </tr>
+            <tr>
+                <td>Vasco</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <!--
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="2">Cabeçalho 1</th>
+                <th>Cabeçalho 2</th>
+                <th>Cabeçalho 3</th>
+            </tr>
+            <tr>
+                <th>Cabeçalho 2.1</th>
+                <th>Cabeçalho 3.1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dados 1</td>
+                <td>Dados 2</td>
+                <td>Dados 3</td>
+            </tr>
+            <tr>
+                <td>Dados 4</td>
+                <td>Dados 5</td>
+                <td>Dados 6</td>
+            </tr>
+        </tbody>
+    </table>
+    -->
+</body>
+</html>

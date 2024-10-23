@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-12</title>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <hr>
+    <br>
+    <table border="1">
+        <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>Camiseta</td>
+            <td>R$ 39,90</td>
+        </tr>
+        <tr>
+            <td>Calça Jeans</td>
+            <td>R$ 89,90</td>
+        </tr>
+        <tr>
+            <td>Tênis</td>
+            <td>R$ 129,90</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <h1>Cabeçalho (thead), corpo (tbody) e rodape (tfoot)</h1>
+    <hr>
+    <br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camiseta</td>
+                <td>R$ 39,90</td>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>Calça Jeans</td>
+                    <td>R$ 89,90</td>
+                </tr>
+            </tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Tênis</td>
+                <td>R$ 129,90</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <hr>
+    <h1>Mesclagem de linhas e colunas</h1>
+    <hr>
+    <br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th colspan="2">Disponibilidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camiseta</td>
+                <td>R$ 39,90</td>
+                <td>Disponível</td>
+                <td>Entregaem24h</td>
+            </tr>
+         <tbody>
+            <tr>
+                <td>Calça Jeans</td>
+                <td>R$ 89,90</td>
+                <td>Indisponível</td>
+                <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -</td>
+            </tr>
+         </tbody>
+        
+        <tfoot>
+            <tr>
+                <td>Tênis</td>
+                <td>R$ 129,90</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th colspan="2">Disponibilidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camiseta</td>
+                <td>R$ 39,90</td>
+                <td rowspan="2">Disponível</td>
+                <td rowspan="2">Entregaem24h</td>
+            </tr>
+                <tr>
+                    <td>Tênis</td>
+                    <td>R$ 129,90</td>
+                </tr>
+            </tbody>
+                <tr>
+                    <td>Calça Jeans</td>
+                    <td>R$ 89,90</td>
+                    <td>Indisponível</td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --</td>
+               </tr>
+       <tfoot>
+           <tbody> 
+                <td>Total</td>
+                <td colspan="3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; R$ 529,90</td>
+            </tbody>
+       </tfoot>
+    </table>
+    <br>
+    <hr>
+    <h1>Desafio das tabelas</h1>
+    <hr>
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="2">Funcionário</th>
+                <th rowspan="2">Semestre</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </thead>
+    </table>
+</body>
+</html>
